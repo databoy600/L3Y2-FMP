@@ -51,7 +51,7 @@ public class InteractionController : MonoBehaviour
    void CheckForInteractionInput()
    {
     // have to press E to interact
-     if (Keyboard.current.eKey.wasPressedThisFrame && currentTargetedInteractable != null)
+     if (Input.GetKeyDown(KeyCode.E) && currentTargetedInteractable != null)
       {
         currentTargetedInteractable.Interact();
       }
