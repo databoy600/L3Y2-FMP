@@ -5,7 +5,22 @@ using UnityEngine;
 // where it would be for the player movment and Jumping for the player.
 public class Player : MonoBehaviour
 {
+    [SerializeField]
+    private LayerMask pickableLayerMask;
+
+    [SerializeField]
+    private GameObject pickUPUI;
+    
+    [SerializeField]
+    //[min(1)]
+    private float hitRange = 3;
+
+    private RaycastHit hit;
+
+    //private RaycastHit hit;
+
     //camera rotation
+
     public float mouseSensitivity = 1f;
     private float verticalRatation = 0f;
     private Transform cameraTransform;
@@ -71,8 +86,21 @@ public class Player : MonoBehaviour
             groundCheckTimer -= Time.deltaTime;
         }
 
+    //     // for picking up objects
+    //    if (hit.collider !=null)
+    //     {
+    //         hit.collider.GetComponent<Highlight>()?.ToggleHighlight(false);
+    //         pickUPUI.SetActive(false);
+    //     }
+    //     if (ApplyJumpPhysics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out hit, hitRange, pickableLayerMask))
+    //     {
+    //         hit.collider.GetComponent<Highlight>()?.ToggleHighlight(true);
+    //         pickUPUI.SetActive(true);
+    //     }
+
         
     }
+   
     void FixedUpdate()
     {
         Moveplayer();
