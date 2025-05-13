@@ -34,14 +34,14 @@ public class Player : MonoBehaviour
     //jumping
     public float jumpForce = 5f;
     public float fallMultiplier = 1.5f; // this would be for the graverty of whan the player would be falling 
-    private bool isGrounded = true;
+    public bool isGrounded = true;
     public LayerMask groundLayer;
     // this would be for the player to be on the ground how for the gravet for the player falling 
     private float groundCheckTimer = 0f;
     //for to be a delay for it rester whn on the ground and hopw that it would have the 
     private float groundCheckDelay =0.3f; 
     private float playerHeight;
-    private float raycastDistance;
+    public float raycastDistance;
     
     private float ascendMultiplier;
 
@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
         Cursor.visible = false;   
 
         playerHeight = GetComponent<CapsuleCollider>().height * transform.localScale.y;
-        raycastDistance = (playerHeight / 2) + 0.2f;     
+        //raycastDistance = (playerHeight / 2) + 0.2f;     
     }
 
     // Update is called once per frame
