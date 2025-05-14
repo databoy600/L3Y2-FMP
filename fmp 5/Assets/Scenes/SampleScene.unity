@@ -2281,7 +2281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f1f1e8abb7fe24d853ad734b0fc883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnPrefab: {fileID: 1946604353}
+  SpawnPrefab: {fileID: 946107371}
   objectInteractMessage: Press E to push the button
 --- !u!65 &1398777851
 BoxCollider:
@@ -2302,8 +2302,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.59635353, y: 0.15840101, z: 0.44686508}
-  m_Center: {x: -0.014281273, y: 0.03424537, z: 0.014215469}
+  m_Size: {x: 0.59635353, y: 0.15840101, z: 0.546051}
+  m_Center: {x: -0.014281273, y: 0.03424537, z: -0.035377502}
 --- !u!4 &1398777852
 Transform:
   m_ObjectHideFlags: 0
@@ -4398,12 +4398,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939770827}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1946604353 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac0dde502202b844c8437aa64d5bfee2,
-    type: 3}
-  m_PrefabInstance: {fileID: 321433287}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1970263495
 GameObject:
   m_ObjectHideFlags: 0
